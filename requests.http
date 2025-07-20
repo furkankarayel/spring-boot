@@ -1,0 +1,30 @@
+### GET request to server
+GET http://localhost:8080
+
+### GET request to SE endpoint
+GET http://localhost:8080/api/v1/software-engineers
+
+### Insert SE
+
+POST http://localhost:8080/api/v1/software-engineers
+Content-Type: application/json
+
+{
+  "name": "Jane",
+  "techStack": "java, spring boot, spring"
+}
+
+### GET SE by Id
+GET http://localhost:8080/api/v1/software-engineers/1
+
+### DELETE by Id
+DELETE http://localhost:8080/api/v1/software-engineers/1
+
+### PUT by Id (update SE)
+PUT http://localhost:8080/api/v1/software-engineers/1
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "techStack": "Java, Spring Boot, PostgreSQL"
+}
